@@ -1,6 +1,5 @@
 "use client"
 
-import Head from 'next/head'
 import dynamic from 'next/dynamic';
 import useSWR from 'swr';
 
@@ -27,7 +26,7 @@ export default function Home(){
 
   return (
     <div className="text-center justify-center">
-      <h1 className='mt-10 text-4xl font-bold underline'>Who's That Skyblock Mayor</h1>
+      <h1 className='mt-10 text-4xl font-bold underline'>Who is That Skyblock Mayor</h1>
       {data && <MayorBox name={data.mayor.name} perks={data.mayor.perks} />}
     </div>
   );
